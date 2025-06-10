@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Pila de fuentes para una mejor compatibilidad*/
+            background: linear-gradient(to right, #a09e9c, #ffffff);/* Fondo degradado para una apariencia moderna */
+            display: flex; /* Flexbox para centrar contenido */
+            flex-direction: column; /* Diseño de columnas */
+            justify-content: center; /* Centrar el contenido verticalmente */
+            align-items: center; /* Centrar el contenido horizontalmente */
+            min-height: 100vh; /* Altura completa de la ventana gráfica */
+            margin: 0; /* Eliminar margen predeterminado */
+            padding: 1rem; /* Relleno para un mejor espaciado */
+        }
+    
+        h1, h2 {
+            color: #333;/* Texto más oscuro para una mejor legibilidad */
+            margin-bottom: 1rem; /* Espacio debajo de los encabezados */
+        }
+    
+        input {
+            padding: 0.8rem;/* Acolchado para mejores objetivos táctiles */
+            margin: 0.5rem 0;/* Espacio entre entradas */
+            width: 100%;/* Ancho completo para entradas */
+            max-width: 300px;/* Limite el ancho máximo para una mejor legibilidad */
+            border: 1px solid #ccc;/* Borde claro para entradas */
+            border-radius: 8px;/* Esquinas redondeadas para entradas */
+            font-size: 1rem;/* Tamaño de fuente para las entradas */
+        }
+    
+        button {
+            padding: 0.8rem 1.2rem;/*  Relleno para botones */
+            background-color: #007BFF;/* Color primario para botones. */
+            color: white;/* Texto blanco para contraste */
+            border: none;/* Sin borde para botones */
+            border-radius: 8px;/* Esquinas redondeadas para botones */
+            cursor: pointer;/* Cursor de puntero para botones */
+            font-size: 1rem;/* Tamaño de fuente para botones */
+            margin-top: 1rem;/* Espacio encima de los botones */
+        }
+    
+        button:hover {/* Efecto de desplazamiento para botones */
+            background-color: #0056b3;
+        }
+    
+        .link {/* Contenedor de enlaces para un mejor espaciado */
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+    
+        .link a {/* Estilos de enlace */
+            color: #007BFF;
+            text-decoration: none;
+        }
+    
+        .link a:hover {/* Efecto de desplazamiento para enlaces */
+            text-decoration: underline;
+        }
+    </style>  
+</head>
+<body>
+<h2>Registro</h2>
+    <input id="nombre" placeholder="Nombre"><br>
+    <input id="email" type="email" placeholder="Correo"><br>
+    <input id="password" type="password" placeholder="Contraseña" type="password" required/>
+    <button onclick="registrar()">Registrar</button>
+
+    <div class="link">
+        ¿Tienes una cuenta? <a href="login.html">Inicia sesion aquí</a>
+    </div>
+
+    <script src="js/app_reg.js"></script>
+</body>
+</html>
